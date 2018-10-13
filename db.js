@@ -1,9 +1,14 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('relay', 'root', 'root', {
-  host: 'localhost',
+const sequelize = new Sequelize('heroku_2ef596f020dbc21', 'b37ba561ee218c', '1f543e6c', {
+  //host: 'localhost',//us-cdbr-iron-east-01.cleardb.net
+  host: 'us-cdbr-iron-east-01.cleardb.net',
   dialect: 'mysql',
   operatorsAliases: false,
 });
+
+//dbName -heroku_2ef596f020dbc21
+//username -b37ba561ee218c
+//password -1f543e6c
 
 sequelize
   .authenticate()
